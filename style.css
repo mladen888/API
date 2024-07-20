@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edd259;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: whitesmoke;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    border-radius: 0.7em;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 5fr 3fr ;
+    gap: 1.25em;
+}
+
+.search-wrapper button {
+    font-size: 1em;
+    background-color: rgb(235, 155, 154);
+    padding: 1em 0;
+    border: none;
+    border-radius: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.search-wrapper button:hover {
+    cursor: pointer;
+    background-color: rgb(211, 95, 95);
+}
+
+.search-wrapper input {
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    border-bottom: 2px solid gray;
+}
+
+#recipe-container {
+    margin-top: 2em;
+    padding: 0 2.5em;
+}
+
+#dishes-list-container {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 200px;
+    max-height: 80%;
+    overflow-y: auto;
+    background: whitesmoke;
+    border-radius: 0.7em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+.dishes-list {
+    list-style-type: none;
+}
+
+.dishes-list li {
+    margin-bottom: 0.5em;
+}
+
+.recipe {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15em 15em 15em 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe img {
+    width: 30em;
+    height: 30em;
+    border-radius: 0.5em;
+    display: block;
+    margin: 0 auto;
+}
+
+.recipe h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+
+.recipe p {
+    margin: 0.5em 0;
+}
+
+.search-id{
+    display: grid;
+    gap: 0.25em;
+}
+.search-id button{
+    font-size: 1em;
+    background-color: rgb(235, 155, 154);
+    padding: 0.5em 0;
+    border: none;
+    border-radius: 1.5em;
+    transition: background-color 0.3s ease; 
+    margin: 0.5em 0 0.5em 0;
+}
+
+.search-id button:hover{
+    cursor:pointer;
+}
+.search-id input{
+    font-size: 0.8em;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    border-bottom: 2px solid gray;
+    height: 2.7em;
+}
